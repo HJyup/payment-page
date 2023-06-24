@@ -23,7 +23,7 @@ const Button: FC<ButtonProps> = ({
       <p className="button-text">Processing payment</p>
     </div>
   ) : (
-    <p className={styles.text}>{text}</p>
+    <p className="button-text">{text}</p>
   );
   return (
     <button className={styles.button} type={type} disabled={isDisabled}>

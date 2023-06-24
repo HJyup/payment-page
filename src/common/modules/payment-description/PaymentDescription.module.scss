@@ -13,8 +13,3 @@
     border: 1px solid $divider;
     background: $white;
 }
-
-.text {
-    color: $text-secondary;
-    @extend .overline;
-}

@@ -21,8 +21,8 @@ const PaymentPage = () => {
       <div className={styles.main}>
         <div className={styles.info}>
           <p className={styles.checkout}>Checkout</p>
-          <p className={styles.infoMain}>5 days free</p>
-          <p className={styles.infoSecond}>then 299.99 UAH per 14 days</p>
+          <p className="text-primary title">5 days free</p>
+          <p className="text-primary body2">then 299.99 UAH per 14 days</p>
         </div>
         <AppleButton />
         <Divider text="or pay with card" />

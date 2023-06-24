@@ -17,16 +17,6 @@
   align-items: center;
 }
 
-.infoMain {
-  color: $text-primary;
-  @extend .title;
-}
-
-.infoSecond {
-  color: $text-primary;
-  @extend .body2
-}
-
 .form {
   margin-top: 16px;
 }

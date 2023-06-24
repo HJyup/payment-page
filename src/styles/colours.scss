@@ -18,3 +18,23 @@ $text-secondary: #666C7B;
 $text-outline: #797E8B;
 $text-tertiary: #B0B4BE;
 $text-field: #C7C9D1;
+
+.text-primary{
+  color: $text-primary;
+}
+
+.text-secondary{
+  color: $text-secondary;
+}
+
+.text-outline {
+  color: $text-outline;
+}
+
+.text-tertiary {
+  color: $text-tertiary;
+}
+
+.text-field {
+  color: $text-field;
+}

@@ -11,31 +11,6 @@
     background: $block;
 }
 
-.info {
-    color: $text-primary;
-    @extend .subtitle1;
-}
-
-.description {
-    color: $text-primary;
-    @extend .body1
-}
-
-.title {
-    color: $text-primary;
-    @extend .body2
-}
-
-.name {
-    color: #797E8B;
-    @extend .overline;
-}
-
-.cost {
-    color: $text-primary;
-    @extend .body3
-}
-
 .costInfo {
     display: flex;
     width: 100%;
