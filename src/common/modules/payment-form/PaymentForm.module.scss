@@ -8,9 +8,12 @@
 }
 
 .additional {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 2%;
+}
+
+.additionalBlock{
+    width: 49%;
 }
 
 .success {

@@ -48,22 +48,26 @@ const PaymentForm = () => {
               error={errors.cardNumber}
             />
             <div className={styles.additional}>
-              <Input
-                id="date"
-                name="date"
-                placeholder="MM/YY"
-                label="Expiration Date"
-                error={errors.date}
-              />
-              <Input
-                id="cvc"
-                name="cvc"
-                placeholder="&#9679;&#9679;&#9679;"
-                type="password"
-                label="CVC"
-                error={errors.cvc}
-                isSVC
-              />
+              <div className={styles.additionalBlock}>
+                <Input
+                  id="date"
+                  name="date"
+                  placeholder="MM/YY"
+                  label="Expiration Date"
+                  error={errors.date}
+                />
+              </div>
+              <div className={styles.additionalBlock}>
+                <Input
+                  id="cvc"
+                  name="cvc"
+                  placeholder="&#9679;&#9679;&#9679;"
+                  type="password"
+                  label="CVC"
+                  error={errors.cvc}
+                  isSVC
+                />
+              </div>
             </div>
             <Button
               type="submit"

@@ -6,11 +6,11 @@
     flex-direction: column;
     position: relative;
     gap: 4px;
+    width: 100%;
 }
 
 .input {
     padding: 10px 12px;
-
     border-radius: 6px;
     border: 1px solid $text-field;
     box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.12);
