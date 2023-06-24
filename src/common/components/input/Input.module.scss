@@ -1,0 +1,42 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colours.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4px;
+}
+
+.input {
+    padding: 10px 12px;
+
+    border-radius: 6px;
+    border: 1px solid $text-field;
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.12);
+
+    color: $text-secondary;
+    @extend .button-text;
+    font-weight: normal;
+}
+
+.hint {
+    position: absolute;
+    background: url("../../../logos/Info.svg");
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    top: 35px;
+    left: 175px;
+}
+
+.label {
+    color: $text-secondary;
+    @extend .overline;
+    font-weight: 500;
+}
+
+.error {
+    @extend .overline;
+    color: #FF1F00;
+}

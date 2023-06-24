@@ -1,0 +1,22 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colours.scss';
+
+.divider {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background: $divider;
+}
+
+.text {
+    @extend .body1;
+    font-weight: normal;
+    color: $text-secondary;
+}

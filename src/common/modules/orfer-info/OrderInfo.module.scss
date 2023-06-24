@@ -1,0 +1,50 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colours.scss';
+
+.container {
+    display: flex;
+    margin: 32px 0;
+    padding: 12px 16px 16px 16px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    background: $block;
+}
+
+.info {
+    color: $text-primary;
+    @extend .subtitle1;
+}
+
+.description {
+    color: $text-primary;
+    @extend .body1
+}
+
+.title {
+    color: $text-primary;
+    @extend .body2
+}
+
+.name {
+    color: #797E8B;
+    @extend .overline;
+}
+
+.cost {
+    color: $text-primary;
+    @extend .body3
+}
+
+.costInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: $border-inline;
+}
