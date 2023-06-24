@@ -1,5 +1,8 @@
+import { useState } from "react";
+import Lottie from "react-lottie";
 import { Form, Formik, FormikHelpers } from "formik";
 
+import { defaultOptions } from "../../../lottie/options/CheckOption";
 import cardSchema from "../../../schema";
 import Button from "../../components/button";
 import Input from "../../components/input";
@@ -13,6 +16,7 @@ interface Values {
 }
 
 const PaymentForm = () => {
+  const [success, setSuccess] = useState(false);
   return (
     <div>
       <Formik
@@ -30,7 +34,8 @@ const PaymentForm = () => {
           setTimeout(() => {
             console.log("Trying to buy something. (Pls buy me Macbook Pro 16)");
             setSubmitting(false);
-          }, 5000);
+            setSuccess(true);
+          }, 2000);
         }}
       >
         {({ isSubmitting, errors, isValid }) => (
@@ -66,6 +71,12 @@ const PaymentForm = () => {
               isSubmit={isSubmitting}
               isValid={isValid}
             />
+            {success && (
+              <div className={styles.success}>
+                <Lottie options={defaultOptions} height={25} width={25} />
+                <p className="overline">Payment was successful</p>
+              </div>
+            )}
           </Form>
         )}
       </Formik>

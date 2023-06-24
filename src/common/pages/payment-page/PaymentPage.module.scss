@@ -2,52 +2,52 @@
 @import '../../../styles/colours.scss';
 
 .container {
-    margin: 16px;
-    display: flex;
-    justify-content: space-between;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main {
-    width: 420px;
+  width: 420px;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .infoMain {
-    color: $text-primary;
-    @extend .title;
+  color: $text-primary;
+  @extend .title;
 }
 
 .infoSecond {
-    color: $text-primary;
-    @extend .body2
+  color: $text-primary;
+  @extend .body2
 }
 
 .form {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .checkout {
-    color: $text-primary;
-    @extend .subtitle2;
-    margin-bottom: 16px;
-    text-align: center;
+  color: $text-primary;
+  @extend .subtitle2;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .translateButton{
-    width: 35px;
-    height: fit-content;
+  width: 35px;
+  height: fit-content;
 }
 
 .footer{
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    color: $text-secondary;
-    @extend .body2;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  color: $text-secondary;
+  @extend .body2;
+  margin-bottom: 40px;
 }

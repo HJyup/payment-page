@@ -9,6 +9,7 @@ import PaymentDescription from "../../modules/payment-description/PaymentDescrip
 import PaymentForm from "../../modules/payment-form";
 
 import styles from "./PaymentPage.module.scss";
+
 const PaymentPage = () => {
   const [translate, setTranslate] = useState(false);
   const text = translate ? "Eng" : "Укр";
